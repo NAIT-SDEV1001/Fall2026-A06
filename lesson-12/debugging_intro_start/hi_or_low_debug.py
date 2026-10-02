@@ -2,6 +2,7 @@ import random
 
 # Generate a random integer between a range
 random_number = random.randint(1, 100)
+breakpoint()
 
 # Get the user input
 user_input = input("Guess a number between 1 and 100: ")
@@ -12,6 +13,7 @@ print(F"user guess {user_guess}")
 high_low_input = input("Do you think you are higher or lower than the number? (h/l) ")
 
 result = ""
+breakpoint()
 
 # Compare the user input to the random number
 if user_guess == random_number:
@@ -23,8 +25,12 @@ elif user_guess < random_number:
 else: 
     result = "error"
 
+breakpoint()
+
 # Is user correct?
-if result == "high" and high_low_input == "h":
+if result == "correct":
+   print("You are correct and this is rigged")
+elif result == "high" and high_low_input == "h":
     print("You are correct it's high!")
 elif result == "low" and high_low_input == "l":
     print("You are correct it's low!")
