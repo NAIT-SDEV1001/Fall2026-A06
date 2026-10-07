@@ -11,8 +11,8 @@ while True:
         else: # add the score to the total and increment the count
             total_score += int(user_input)
             count += 1
-    except ValueError:
-        print("Please enter a valid number or 'quit' to stop")
+    except ValueError as e:
+        print(f"Please enter a valid number or 'quit' to stop ({e})")
 
 # only calculate the average if we have at least one score
 
