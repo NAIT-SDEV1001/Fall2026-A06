@@ -10,6 +10,7 @@ def guess_items_price(guess):
         random.randint(1, 10),
         random.randint(1, 10),
     ]
+    
     print(F"The prices were: {random_prices}")
 
     if guess in random_prices:

@@ -6,8 +6,8 @@ playing = True
 while playing:
 
     guess = int(input("Guess the price of one of the items (done): "))
-    is_correct = guess_items_price(guess)
-    if is_correct:
+    
+    if guess_items_price(guess):
         print("You win!")
     else:
         print("Sorry you lose!")

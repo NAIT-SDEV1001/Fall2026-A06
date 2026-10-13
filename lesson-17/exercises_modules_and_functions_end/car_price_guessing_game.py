@@ -3,6 +3,7 @@ from price_is_right_games import guess_car_price
 print("Welcome to the car price guessing game!")
 
 playing = True
+
 while playing:
     guess = int(input("Guess the price of the car: "))
     result = guess_car_price(guess)
