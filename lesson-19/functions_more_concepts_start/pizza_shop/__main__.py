@@ -1,3 +1,5 @@
+from pizza_shop.utils.pizza import make_pizza as mp
+
 if __name__ == "__main__":
     ordering_pizza = True
     while ordering_pizza:
@@ -23,3 +25,5 @@ if __name__ == "__main__":
             special_request_amount = input("How much? (light, extra, double): ")
             special_requests[special_request_topping] = special_request_amount
             special_request_topping = input("What modification to toppings? (enter 'done' when finished): ")
+
+    mp(*toppings, size=size, crust=crust, **special_requests)
