@@ -97,3 +97,7 @@ car = {
         }
     }
 }
+
+print("i want 'single quotes' in my string")
+
+print('i want \'single quotes\' in my string')
