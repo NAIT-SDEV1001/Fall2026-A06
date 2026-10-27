@@ -1,2 +1,8 @@
-I've been learning python and it's pretty fun so far!
-I'm really excited to learn how to use pip and virtualenv, and learn more about the python ecosystem.
+Hello from journal_app.py
+Hello from journal_app.py
+Hello from journal_app.py
+Dear diary, today no one showed up for class :(
+lkajsdkad
+;alskd;laskd
+lkajsdljkasd
+asdas
