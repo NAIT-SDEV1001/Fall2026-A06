@@ -11,4 +11,4 @@ book = {
         "Title": "Book Title"
         }
 
-add_book("test.csv", book)
+add_book(["test.csv"], book)
