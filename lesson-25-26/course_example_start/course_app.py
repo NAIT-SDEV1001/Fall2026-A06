@@ -7,7 +7,7 @@ from tools.assignment import Assignment
 from tools.submission import Submission
 
 def load_student_data(course: Course) -> None:
-    # students = list[Student] = []
+    # students: list[Student] = []
 
     # for student in student_data:
     #     new_student: Student = Student(student["id"], student["name"])
@@ -29,11 +29,16 @@ def load_submission_data(course: Course) -> None:
         # create new submission
         student = course.get_student(submission["student_id"])
 
-        if student == None:
+        if student is None:
             print("Student not found trying to load submission.")
             continue
-        
+
         assignment = course.get_assignment(submission["assignment_id"])
+
+        if assignment is None:
+            print("Assignment not found trying to load submission.")
+            continue
+
         new_submission = Submission(student, assignment, submission["grade"])
         
         student.add_submission(new_submission)

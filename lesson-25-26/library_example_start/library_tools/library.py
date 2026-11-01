@@ -3,7 +3,7 @@ from library_tools.book import Book
 class Library:
     def __init__(self, name: str) -> None:
         self.name = name
-        self.books = list[Book] = []
+        self.books: list[Book] = []
 
     def __str__(self) -> str:
         return self.name

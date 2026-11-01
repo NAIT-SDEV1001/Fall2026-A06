@@ -34,11 +34,11 @@ class Course:
 
         return None
 
-    def get_course_grade_min() -> int:
+    def get_course_grade_min(self) -> int:
         pass
 
-    def get_course_grade_max() -> int:
+    def get_course_grade_max(self) -> int:
         pass
 
-    def get_course_grade_average() -> float:
+    def get_course_grade_average(self) -> float:
         pass

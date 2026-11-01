@@ -1,8 +1,8 @@
 class Student:
-    def __init__(self, id: int, name: str, submissions: list["Submission"] = []) -> None:
+    def __init__(self, id: int, name: str) -> None:
         self.id = id
         self.name = name
-        self.submissions = submissions
+        self.submissions = []
 
     def __str__(self) -> str:
         return self.name
