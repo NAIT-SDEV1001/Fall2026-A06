@@ -52,4 +52,8 @@ if __name__ == "__main__":
     load_assignment_data(course)
     load_submission_data(course)
     
+    for student in course.students:
+        for submission in student.submissions:
+            print(submission)
+
     print(course)
