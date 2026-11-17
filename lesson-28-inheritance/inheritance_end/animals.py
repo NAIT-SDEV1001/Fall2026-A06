@@ -36,7 +36,42 @@ class Dog(Animal):
         print(f"{self.name} chases after a Honda Civic!")
 
 class Cat(Animal):
-    pass
+    def __init__(self, name: str, color: str, num_legs: int, pattern: str, anger_level: int) -> None:
+        super().__init__(name, color, num_legs)
+        self.pattern = pattern
+        self.anger_level = anger_level
+
+    def __str__(self) -> str:
+        super_string = super().__str__()
+        super_string += f"\nPattern: {self.pattern}"
+        return super_string
+
+    def make_a_noise(self) -> None:
+        if self.anger_level > 20:
+            print(f"{self.name} says Hiss!")
+        elif 10 < self.anger_level <= 20:
+            print(f"{self.name} says meow meow.")
+        else:
+            print(f"{self.name} says purr purr.")
+
+    def knock_stuff(self) -> None:
+        print(f"{self.name} knocks a clock off of the shelf.")
 
 class Bird(Animal):
-    pass
+    def __init__(self, name: str, color: str, num_legs: int, wingspan: float) -> None:
+        super().__init__(name, color, num_legs)
+        self.wingspan = wingspan
+
+    def __str__(self) -> str:
+        super_string = super().__str__()
+        super_string += f"\nWingspan: {self.wingspan} cm"
+        return super_string
+
+    def make_a_noise(self) -> None:
+        print(f"{self.name} says 'I want crackers.'")
+
+    def eat(self) -> None:
+        print(f"{self.name} pecks at the crackers.")
+
+    def move(self) -> None:
+        print(f"{self.name} flies around!")
